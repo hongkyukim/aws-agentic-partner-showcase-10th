@@ -1,0 +1,28 @@
+[project]
+name = "aws-agentic-partner-showcase-10th"
+version = "0.1.0"
+description = "Hands-on workshop: production-ready agentic AI with AWS, Temporal, Arize, and Databricks"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8.0,<9"]
+live = [
+  "boto3>=1.35,<2",
+  "temporalio>=1.7,<2",
+  "arize-otel>=0.8,<1",
+  "arize-phoenix-otel>=0.6,<1",
+  "opentelemetry-sdk>=1.27,<2",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=77,<83"]
+build-backend = "setuptools.build_meta"

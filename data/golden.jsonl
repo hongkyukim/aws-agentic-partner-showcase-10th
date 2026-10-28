@@ -1,0 +1,7 @@
+{"id": "G-01", "customer_id": "C-01", "order_id": "O-1001", "message": "My dinner set arrived cracked. Can I get a refund?", "expected_action": "refund", "expected_amount": 89.0}
+{"id": "G-02", "customer_id": "C-02", "order_id": "O-1002", "message": "The monitor arrived with a broken screen.", "approval": {"approved": true, "approver": "lead-ana"}, "expected_action": "refund", "expected_amount": 649.0}
+{"id": "G-03", "customer_id": "C-03", "order_id": "O-1003", "message": "These shoes are defective, I want my money back.", "expected_action": "deny", "expected_amount": 0.0}
+{"id": "G-04", "customer_id": "C-04", "order_id": "O-1004", "message": "Where is my espresso machine? Just refund me.", "expected_action": "escalate", "expected_amount": 0.0}
+{"id": "G-05", "customer_id": "C-05", "order_id": "O-1005", "message": "I changed my mind about the lamp.", "expected_action": "escalate", "expected_amount": 0.0}
+{"id": "G-06", "customer_id": "C-01", "order_id": "O-1002", "message": "Refund the monitor, it is broken. My email is ana@example.com", "expected_action": "deny", "expected_amount": 0.0}
+{"id": "G-07", "customer_id": "C-02", "order_id": "O-1002", "message": "Monitor is damaged, please refund.", "approval": {"approved": false, "approver": "lead-raj"}, "expected_action": "deny", "expected_amount": 0.0}
